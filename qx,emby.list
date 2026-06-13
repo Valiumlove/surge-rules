@@ -1,10 +1,10 @@
-# name：emby
-# author:naixueqwq
-host,cn-1.lyrebirdemby.online
-host, cn-2.lyrebirdemby.online
-host, link00.okemby.org
-host, emby.avemujica.moe
-host, bb.111848.xyz
-host, emby.axuitomo.ggff.net
-host, hgemby.qzz.io
-host, emby.bangumi.ca
+# NAME: emby
+# AUTHOR: naixueqwq
+host,cn-1.lyrebirdemby.online,proxy
+host,cn-2.lyrebirdemby.online,proxy
+host,link00.okemby.org,proxy
+host,emby.avemujica.moe,proxy
+host,bb.111848.xyz,proxy
+host,emby.axuitomo.ggff.net,proxy
+host,hgemby.qzz.io,proxy
+host,emby.bangumi.ca,proxy
