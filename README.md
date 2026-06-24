@@ -1,2 +1,2 @@
-# surge-rules
-个人 Surge QuantumultX 远程分流规则集 / My Surge,QuantumultX Ruleset for remote RULE-SET
+# surge-rules/modules/Settings
+个人 Surge分流/模块/配置
