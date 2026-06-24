@@ -1,0 +1,36 @@
+#!name=CSDN 去广告
+#!desc=去开屏、悬浮广告、首页弹窗、我的页广告，并拦截常见第三方广告域名
+#!homepage=https://github.com/Valiumlove/surge-signin-scripts
+
+[Script]
+CSDN-OpenScreen = type=http-response, pattern=^https:\/\/app-gw\.csdn\.net\/silkroad-api\/api\/v2\/assemble\/list\/pub\/channel\/app_open_screen_ad, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/naixueqwq/surge-signin-scripts/main/csdn_ad_rewrite.js
+CSDN-AppAd = type=http-response, pattern=^https:\/\/app-gw\.csdn\.net\/silkroad-api\/api\/v2\/assemble\/list\/pub\/channel\/app_ad_v1, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/naixueqwq/surge-signin-scripts/main/csdn_ad_rewrite.js
+CSDN-NoAdsUser = type=http-response, pattern=^https:\/\/app-gw\.csdn\.net\/silkroad-api\/api\/v2\/assemble\/list\/pub\/channel\/app_no_ads_user, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/naixueqwq/surge-signin-scripts/main/csdn_ad_rewrite.js
+CSDN-iOSConfig = type=http-response, pattern=^https:\/\/app-gw\.csdn\.net\/community\/v1\/profile\/app\/get-ios-config, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/naixueqwq/surge-signin-scripts/main/csdn_ad_rewrite.js
+CSDN-VersionConfig = type=http-response, pattern=^https:\/\/app-gw\.csdn\.net\/community\/v1\/profile\/app\/version\/config, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/naixueqwq/surge-signin-scripts/main/csdn_ad_rewrite.js
+
+[Rule]
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao1.com,REJECT
+DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao-b.com,REJECT
+DOMAIN-SUFFIX,sdk.beizi.biz,REJECT
+DOMAIN-SUFFIX,api-htp.beizi.biz,REJECT
+DOMAIN-SUFFIX,adtracker.adfunlink.com,REJECT
+DOMAIN-SUFFIX,t.funlinkads.com,REJECT
+DOMAIN-SUFFIX,zlsdk.1rtb.net,REJECT
+DOMAIN-SUFFIX,tr.medproad.com,REJECT
+DOMAIN-SUFFIX,logrcv.yunxish.com,REJECT
+DOMAIN-SUFFIX,api.yunxish.com,REJECT
+DOMAIN-SUFFIX,usr-api.yunxish.com,REJECT
+DOMAIN-SUFFIX,win.gdt.qq.com,REJECT
+DOMAIN-SUFFIX,v2mi.gdt.qq.com,REJECT
+DOMAIN-SUFFIX,adsmind.ugdtimg.com,REJECT
+DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
+DOMAIN-SUFFIX,sf3-fe-tos.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,sf6-fe-tos.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,kunyu.csdn.net,REJECT
+DOMAIN-SUFFIX,marketing.csdn.net,REJECT
+
+[MITM]
+hostname = %APPEND% app-gw.csdn.net
