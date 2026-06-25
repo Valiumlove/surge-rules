@@ -10,7 +10,19 @@
 
 </div>
 
-<br>
+---
+
+## ⚙️ 远程配置订阅
+
+复制下方链接，在 Surge 中选择「从 URL 下载配置」粘贴即可：
+
+```
+https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/conf/PersonalConfiguration.conf
+```
+
+> ⚠️ 配置内含个人代理节点信息，使用前请根据自身情况修改 `[Proxy]` 与 `[Proxy Group]` 部分
+
+---
 
 ## 📂 目录
 
@@ -21,9 +33,9 @@
 | `JavaSesponse/` | JS 脚本 |
 | `conf/` | 个人配置文件 |
 
-<br>
+---
 
-## 🚀 使用
+## 🚀 使用方式
 
 **引用规则**
 
@@ -39,7 +51,5 @@ https://raw.githubusercontent.com/Valiumlove/surge-rules/main/Module/xxx.sgmodul
 ```
 
 > 💡 若 `raw.githubusercontent.com` 访问受阻，将域名替换为 `cdn.jsdelivr.net/gh/Valiumlove/surge-rules@main`
-
-<br>
 
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:0f3460,50:16213e,100:1a1a2e&height=100&section=footer)
