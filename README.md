@@ -39,7 +39,7 @@ https://raw.githubusercontent.com/Valiumlove/surge-rules/main/conf/PersonalConfi
 ---
 
 ### ② 单独使用规则
-https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/xxx.list
+https://github.com/Valiumlove/surge-rules/blob/Hermit/Rules/README.md
 
 ---
 
