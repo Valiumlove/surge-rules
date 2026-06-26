@@ -75,6 +75,23 @@ https://raw.githubusercontent.com/Valiumlove/surge-rules/main/Module/xxx.sgmodul
 
 <div align="center">
 
-### ⚡ 能用就别折腾，先跑起来再说
+
+---
+
+<br/>
+
+## ⚠️ Notes
+
+- Modify `[Proxy]` & `[Proxy Group]` before use
+- Compatible with Surge iOS / macOS
+- Some modules require MITM enabled
+
+---
+
+<br/>
+
+<div align="center">
+
+# 🔥 Minimal. Powerful. Scalable.
 
 </div>
