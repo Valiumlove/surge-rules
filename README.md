@@ -39,12 +39,12 @@ https://raw.githubusercontent.com/Valiumlove/surge-rules/main/conf/PersonalConfi
 ---
 
 ### ② 单独使用规则
-https://raw.githubusercontent.com/Valiumlove/surge-rules/main/Rules/xxx.list
+https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/xxx.list
 
 ---
 
 ### ③ 安装模块
-https://raw.githubusercontent.com/Valiumlove/surge-rules/main/Module/xxx.sgmodule
+https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Module/xxx.sgmodule
 
 ---
 
