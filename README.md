@@ -22,7 +22,6 @@
 
 - 📦 分流规则（Rules）
 - 🔧 功能模块（Module）
-- 🧠 增强脚本（JavaScript）
 - ⚙️ 一键配置（Config）
 
 👉 目标：**新手也能直接用，不需要学习成本**
@@ -52,7 +51,6 @@ https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Module/xxx.sgmod
 
 - 📦 Rules → 分流规则（按网站分类）
 - 🔧 Module → 功能增强模块
-- 🧠 JavaScript → 自动化脚本
 - ⚙️ conf → 一键配置文件
 
 ---
