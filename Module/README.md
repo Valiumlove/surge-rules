@@ -8,7 +8,7 @@
 
 | 类别 | 模块名称 | 功能描述 | 模块链接 |
 |---|---|---|---|
-| 去广告 | 去广告 | 屏蔽常见广告与追踪器 | — |
+| 广告平台拦截 | 去广告 | 屏蔽常见广告与追踪器 | https://war.githubusercontent.com/Valiumlove/surge-rules/Hermit/Module/Adblockingplatform.sgmodule |
 | 功能增强 | YouTube | YouTube 增强体验 | — |
 | 解锁会员 | — | — | — |
 | 隐私保护 | — | — | — |
