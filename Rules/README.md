@@ -23,8 +23,8 @@
 | 📱 社交     | Instagram     | Instagram.list    | [https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Instagram.list)       | Proxy                   |
 | 📱 社交     | Telegram      | Telegram.list     | [https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Telegram.list)         | Proxy                   |
 | 🎮 游戏     | Game          | Game.list         | [https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Game.list)                 | Proxy                   |
-| ☁️ 云服务    | Microsoft     | Microsoft.list    | [https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Microsoft.list)       | Proxy                   |
-| ☁️ 云服务    | Google        | Google.list       | [https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Google.list)             | Proxy                   |
+| ☁️ 微软云服务    | Microsoft     | Microsoft.list    | [https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Microsoft.list)       | Proxy                   |
+| ☁️ 谷歌云服务    | Google        | Google.list       | [https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Google.list)             | Proxy                   |
 | 🍎 苹果     | Apple         | apple.list        | [https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/apple.list)               | DIRECT                  |
 | 🇨🇳 国内媒体 | Chinese Media | chinesemedia.list | [https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/chinesemedia.list) | DIRECT                  |
 | 📺 媒体     | Emby          | Emby.list         | [https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Emby.list)                 | Proxy                   |
