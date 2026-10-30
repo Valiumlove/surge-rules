@@ -2,7 +2,6 @@ name: 自动同步Surge规则
 
 on:
   schedule:
-    # 每天北京时间早上8点运行
     - cron: '0 0 * * *'
   workflow_dispatch:
 
@@ -13,93 +12,55 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: 拉取仓库代码
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: 安装Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: 运行规则同步脚本
-        env:
-          PAT: ${{ secrets.GITHUB_TOKEN }}
+      - name: 下载规则文件
         run: |
-          python << 'EOF'
-          import urllib.request
-          import os
+          set -e
+          mkdir -p Rules
+          BASE="https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider"
           
-          base = "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/"
+          # 基础规则
+          wget -q -O Rules/reject.list "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt"
+          wget -q -O Rules/proxy.list "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt"
+          wget -q -O Rules/direct.list "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt"
           
-          # 正确的规则映射
-          sources = {
-              # 基础规则
-              "Rules/reject.list": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt",
-              "Rules/proxy.list": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt",
-              "Rules/direct.list": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt",
-              
-              # 根目录直接存在的规则
-              "Rules/apple.list": base + "Apple.list",
-              "Rules/Microsoft.list": base + "Microsoft.list",
-              "Rules/PayPal.list": base + "PayPal.list",
-              "Rules/Speedtest.list": base + "Speedtest.list",
-              "Rules/steam.list": base + "Steam.list",
-              "Rules/Telegram.list": base + "Telegram.list",
-              "Rules/tiktok.list": base + "TikTok.list",
-              "Rules/discord.list": base + "Discord.list",
-              "Rules/douying.list": base + "Douyin.list",
-              "Rules/AI.list": base + "AI%20Suite.list",
-              
-              # Media子目录下的流媒体/视频/音乐规则
-              "Rules/Netflix.list": base + "Media/Netflix.list",
-              "Rules/Disney.list": base + "Media/Disney%20Plus.list",
-              "Rules/YouTube.list": base + "Media/YouTube.list",
-              "Rules/bilibili.list": base + "Media/Bilibili.list",
-              "Rules/spotify.list": base + "Media/Spotify.list",
-              "Rules/iqiyi.list": base + "Media/IQIYI.list",
-              "Rules/tencentvideo.list": base + "Media/Tencent%20Video.list",
-              "Rules/youku.list": base + "Media/Youku.list",
-              "Rules/neteasemusic.list": base + "Media/Netease%20Music.list",
-              "Rules/amazon.list": base + "Media/Amazon.list",
-              "Rules/pornhub.list": base + "Media/Pornhub.list",
-          }
+          # 根目录规则
+          wget -q -O Rules/apple.list "$BASE/Apple.list"
+          wget -q -O Rules/Microsoft.list "$BASE/Microsoft.list"
+          wget -q -O Rules/PayPal.list "$BASE/PayPal.list"
+          wget -q -O Rules/Speedtest.list "$BASE/Speedtest.list"
+          wget -q -O Rules/steam.list "$BASE/Steam.list"
+          wget -q -O Rules/Telegram.list "$BASE/Telegram.list"
+          wget -q -O Rules/tiktok.list "$BASE/TikTok.list"
+          wget -q -O Rules/discord.list "$BASE/Discord.list"
+          wget -q -O Rules/douying.list "$BASE/Douyin.list"
+          wget -q -O Rules/AI.list "$BASE/AI%20Suite.list"
           
-          headers = {"User-Agent": "Mozilla/5.0"}
-          changed = []
+          # Media目录规则
+          wget -q -O Rules/Netflix.list "$BASE/Media/Netflix.list"
+          wget -q -O Rules/Disney.list "$BASE/Media/Disney%20Plus.list"
+          wget -q -O Rules/YouTube.list "$BASE/Media/YouTube.list"
+          wget -q -O Rules/bilibili.list "$BASE/Media/Bilibili.list"
+          wget -q -O Rules/spotify.list "$BASE/Media/Spotify.list"
+          wget -q -O Rules/iqiyi.list "$BASE/Media/IQIYI.list"
+          wget -q -O Rules/tencentvideo.list "$BASE/Media/Tencent%20Video.list"
+          wget -q -O Rules/youku.list "$BASE/Media/Youku.list"
+          wget -q -O Rules/neteasemusic.list "$BASE/Media/Netease%20Music.list"
+          wget -q -O Rules/amazon.list "$BASE/Media/Amazon.list"
+          wget -q -O Rules/pornhub.list "$BASE/Media/Pornhub.list"
           
-          for local_path, url in sources.items():
-              try:
-                  req = urllib.request.Request(url, headers=headers)
-                  with urllib.request.urlopen(req, timeout=30) as resp:
-                      new_content = resp.read().decode('utf-8')
-                  
-                  os.makedirs(os.path.dirname(local_path), exist_ok=True)
-                  old_content = ""
-                  if os.path.exists(local_path):
-                      with open(local_path, 'r', encoding='utf-8') as f:
-                          old_content = f.read()
-                  
-                  if new_content != old_content:
-                      with open(local_path, 'w', encoding='utf-8') as f:
-                          f.write(new_content)
-                      changed.append(local_path)
-                      print(f"更新: {local_path}")
-                  else:
-                      print(f"无变化: {local_path}")
-              except Exception as e:
-                  print(f"拉取失败 {url}: {e}")
-          
-          print(f"变更文件数: {len(changed)}")
-          EOF
+          echo "所有规则下载完成"
+          ls -la Rules/
 
       - name: 提交更新
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          if ! git diff --staged --quiet; then
-            git commit -m "chore: 自动同步上游规则 $(date +%Y-%m-%d)"
-            git push
+          if git diff --staged --quiet; then
+            echo "没有变更"
           else
-            echo "没有需要提交的变更"
+            git commit -m "chore: 自动同步规则 $(date +%Y-%m-%d)"
+            git push
           fi
