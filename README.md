@@ -14,6 +14,8 @@
 
 ---
 
+🌐 **[打开 Surge 规则介绍页](https://valiumlove.github.io/surge-rules/)** · [浏览规则目录](https://github.com/Valiumlove/surge-rules/tree/Hermit/Rules)
+
 ## 📌 项目说明
 
 这是一个 **Surge 规则 / 模块 / 脚本合集仓库**
@@ -67,7 +69,7 @@ https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Module/xxx.sgmod
 
 👉 **直接使用一键配置（最省事）**
 
-不用一个个折腾规则。
+不用一个个折腾。
 
 ---
 
