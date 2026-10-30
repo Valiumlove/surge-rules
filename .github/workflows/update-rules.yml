@@ -36,24 +36,55 @@ jobs:
               "Rules/proxy.list": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt",
               "Rules/direct.list": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt",
               
-              # 全部分类规则 - dler-io源(持续更新，分类齐全，替代已归档的blackmatrix7)
+              # 流媒体/视频平台
               "Rules/Netflix.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/Netflix.list",
               "Rules/Disney.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/Disney%2B.list",
               "Rules/YouTube.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Video/YouTube.list",
-              "Rules/spotify.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Audio/Spotify.list",
               "Rules/tiktok.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Video/TikTok.list",
+              "Rules/douying.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Video/DouYin.list",
+              "Rules/bilibili.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Video/Bilibili.list",
+              "Rules/iqiyi.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/iQiyi.list",
+              "Rules/tencentvideo.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/TencentVideo.list",
+              "Rules/youku.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/Youku.list",
+              "Rules/Emby.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/Emby.list",
+              "Rules/Globalmeda.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/GlobalMedia.list",
+              "Rules/chinesemedia.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/ChinaMedia.list",
+              
+              # 音乐平台
+              "Rules/spotify.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Audio/Spotify.list",
+              "Rules/neteasemusic.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Audio/NetEaseMusic.list",
+              
+              # 社交/通讯
               "Rules/Instagram.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Social/Instagram.list",
               "Rules/Telegram.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Social/Telegram.list",
-              "Rules/Emby.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/Emby.list",
+              "Rules/twitter.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Social/Twitter.list",
+              "Rules/reddit.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Social/Reddit.list",
+              "Rules/discord.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Social/Discord.list",
+              "Rules/whatsapp.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Social/WhatsApp.list",
+              "Rules/weibo.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Social/Weibo.list",
+              "Rules/zhihu.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Social/Zhihu.list",
+              
+              # 大厂服务/工具
               "Rules/Google.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/Google.list",
               "Rules/Microsoft.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/Microsoft.list",
               "Rules/apple.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/Apple.list",
+              "Rules/amazon.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/Amazon.list",
+              "Rules/paypal.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/PayPal.list",
+              "Rules/onedrive.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/OneDrive.list",
+              "Rules/dropbox.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/Dropbox.list",
+              "Rules/baidu.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/Baidu.list",
+              "Rules/taobao.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/Taobao.list",
+              "Rules/jd.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/JD.list",
+              "Rules/alipay.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/Alipay.list",
+              
+              # 游戏/工具
               "Rules/Game.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Game/Game.list",
-              "Rules/Globalmeda.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/GlobalMedia.list",
-              "Rules/chinesemedia.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/ChinaMedia.list",
+              "Rules/steam.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Game/Steam.list",
               "Rules/Speedtest.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Tool/Speedtest.list",
+              
+              # AI服务
               "Rules/AI.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/AI/OpenAI.list",
-              "Rules/douying.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Video/DouYin.list",
+              "Rules/anthropic.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/AI/Claude.list",
           }
           
           headers = {"User-Agent": "Mozilla/5.0"}
