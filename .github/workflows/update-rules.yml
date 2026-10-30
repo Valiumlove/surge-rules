@@ -29,14 +29,14 @@ jobs:
           import urllib.request
           import os
           
-          # 上游规则映射: 本地文件名 -> 上游URL
+          # 上游规则映射: 本地文件名 -> 活跃维护的上游URL
           sources = {
-              # 广告拦截/基础代理直连规则 - Loyalsoldier源
+              # 基础规则 - Loyalsoldier源(长期活跃维护)
               "Rules/reject.list": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt",
               "Rules/proxy.list": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt",
               "Rules/direct.list": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt",
               
-              # 流媒体规则 - dler-io源
+              # 全部分类规则 - dler-io源(持续更新，分类齐全，替代已归档的blackmatrix7)
               "Rules/Netflix.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/Netflix.list",
               "Rules/Disney.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/Disney%2B.list",
               "Rules/YouTube.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Video/YouTube.list",
@@ -45,16 +45,15 @@ jobs:
               "Rules/Instagram.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Social/Instagram.list",
               "Rules/Telegram.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Social/Telegram.list",
               "Rules/Emby.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/Emby.list",
-              
-              # 大厂服务规则 - blackmatrix7源
-              "Rules/Google.list": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list",
-              "Rules/Microsoft.list": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
-              "Rules/apple.list": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list",
-              "Rules/Game.list": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list",
-              "Rules/Globalmeda.list": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia.list",
-              "Rules/chinesemedia.list": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list",
-              "Rules/Speedtest.list": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Speedtest/Speedtest.list",
-              "Rules/AI.list": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+              "Rules/Google.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/Google.list",
+              "Rules/Microsoft.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/Microsoft.list",
+              "Rules/apple.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Service/Apple.list",
+              "Rules/Game.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Game/Game.list",
+              "Rules/Globalmeda.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/GlobalMedia.list",
+              "Rules/chinesemedia.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/ChinaMedia.list",
+              "Rules/Speedtest.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Tool/Speedtest.list",
+              "Rules/AI.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/AI/OpenAI.list",
+              "Rules/douying.list": "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Video/DouYin.list",
           }
           
           headers = {"User-Agent": "Mozilla/5.0"}
@@ -82,10 +81,7 @@ jobs:
               except Exception as e:
                   print(f"拉取失败 {url}: {e}")
           
-          if changed:
-              print(f"::set-output name=changed::true")
-          else:
-              print(f"::set-output name=changed::false")
+          print(f"变更文件数: {len(changed)}")
           EOF
 
       - name: 提交更新
