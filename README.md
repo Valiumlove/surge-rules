@@ -60,6 +60,7 @@
 | 📺 视频 | 腾讯视频 | `tencentvideo.list` | DIRECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/tencentvideo.list) |
 | 📱 社交媒体 | TikTok | `tiktok.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/tiktok.list) |
 | 📺 视频 | 优酷 Youku | `youku.list` | DIRECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/youku.list) |
+| 📱 社交平台 | Whatsapp | `Whatsapp.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Whatsapp.list) |
 
 ## ⚙️ 策略说明
 
