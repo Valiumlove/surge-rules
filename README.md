@@ -28,38 +28,38 @@
 | 分类 | 服务 / 用途 | 规则文件 | 说明中标注的策略 | Raw 链接 |
 | --- | --- | --- | --- | --- |
 | 🤖 AI | AI | `AI.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/main/Rules/AI.list) |
-| 🛡️ 广告过滤 | Advertising Lite | `AdvertisingLite.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/AdvertisingLite.list) |
+| 🛡️ 广告过滤 | Advertising Lite | `AdvertisingLite.list` | REJECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/AdvertisingLite.list) |
 | 🎬 流媒体 | Disney+ | `Disney.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Disney.list) |
 | 📺 媒体服务 | Emby | `Emby.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Emby.list) |
-| 📱 社交平台 | Facebook | `Facebook.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Facebook.list) |
+| 📱 社交平台 | Facebook | `Facebook.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Facebook.list) |
 | 🎮 游戏 | Game | `Game.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Game.list) |
-| 🌐 国际媒体与服务 | Globalmeda | `Globalmeda.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Globalmeda.list) |
+| 🌐 国际媒体与服务 | Globalmeda | `Globalmeda.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Globalmeda.list) |
 | ☁️ 云服务 | Google | `Google.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Google.list) |
 | 📱 社交平台 | Instagram | `Instagram.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Instagram.list) |
 | ☁️ 云服务 | Microsoft | `Microsoft.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Microsoft.list) |
 | 🎬 流媒体 | Netflix | `Netflix.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Netflix.list) |
-| 💳 支付服务 | PayPal | `PayPal.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/PayPal.list) |
+| 💳 支付服务 | PayPal | `PayPal.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/PayPal.list) |
 | 🌐 代理节点集合 | Proxy Nodes | `Proxy.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Proxy.list) |
 | 🔄 网络测速 | Speed Test | `Speedtest.list` | DIRECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Speedtest.list) |
 | 📱 社交平台 | Telegram | `Telegram.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/Telegram.list) |
 | 🎬 视频 | YouTube | `YouTube.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/YouTube.list) |
-| 🛒 电商与云服务 | Amazon | `amazon.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/amazon.list) |
+| 🛒 电商与云服务 | Amazon | `amazon.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/amazon.list) |
 | 🍎 苹果服务 | Apple | `apple.list` | DIRECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/apple.list) |
-| 📺 视频 | Bilibili | `bilibili.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/bilibili.list) |
+| 📺 视频 | Bilibili | `bilibili.list` | DIRECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/bilibili.list) |
 | 🇨🇳 国内媒体 | Chinese Media | `chinesemedia.list` | DIRECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/chinesemedia.list) |
-| 🏠 直连规则 | Direct | `direct.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/direct.list) |
-| 💬 社交平台 | Discord | `discord.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/discord.list) |
-| 📺 视频 | 抖音 DouYin | `douying.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/douying.list) |
-| 📺 视频 | iQIYI | `iqiyi.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/iqiyi.list) |
-| 🎵 音乐 | 网易云音乐 | `neteasemusic.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/neteasemusic.list) |
-| 🔞 成人内容 | Pornhub | `pornhub.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/pornhub.list) |
-| 🌐 代理规则 | Proxy | `proxy.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/proxy.list) |
-| 🚫 拦截规则 | Reject | `reject.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/reject.list) |
+| 🏠 直连规则 | Direct | `direct.list` | DIRECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/direct.list) |
+| 💬 社交平台 | Discord | `discord.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/discord.list) |
+| 📺 视频 | 抖音 DouYin | `douying.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/douying.list) |
+| 📺 视频 | iQIYI | `iqiyi.list` | DIRECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/iqiyi.list) |
+| 🎵 音乐 | 网易云音乐 | `neteasemusic.list` | DIRECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/neteasemusic.list) |
+| 🔞 成人内容 | Pornhub | `pornhub.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/pornhub.list) |
+| 🌐 代理规则 | Proxy | `proxy.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/proxy.list) |
+| 🚫 拦截规则 | Reject | `reject.list` | REJECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/reject.list) |
 | 🎵 音乐 | Spotify | `spotify.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/spotify.list) |
-| 🎮 游戏平台 | Steam | `steam.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/steam.list) |
-| 📺 视频 | 腾讯视频 | `tencentvideo.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/tencentvideo.list) |
+| 🎮 游戏平台 | Steam | `steam.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/steam.list) |
+| 📺 视频 | 腾讯视频 | `tencentvideo.list` | DIRECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/tencentvideo.list) |
 | 📱 社交媒体 | TikTok | `tiktok.list` | PROXY | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/tiktok.list) |
-| 📺 视频 | 优酷 Youku | `youku.list` | 未指定 | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/youku.list) |
+| 📺 视频 | 优酷 Youku | `youku.list` | DIRECT | [Raw](https://raw.githubusercontent.com/Valiumlove/surge-rules/Hermit/Rules/youku.list) |
 
 ## ⚙️ 策略说明
 
