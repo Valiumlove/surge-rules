@@ -1,0 +1,9 @@
+#!name=kelee脚本查看
+#!desc=查看可莉插件
+
+[Header Rewrite]
+http-request ^https:\/\/(hub\.)?kelee\.one\/ header-replace User-Agent "Loon/921 CFNetwork/3860.300.31 Darwin/25.2.0"
+http-response ^https:\/\/(hub\.)?kelee\.one\/ header-replace Content-Type "text/plain; charset=utf-8"
+
+[MITM]
+hostname = %APPEND% kelee.one, hub.kelee.
